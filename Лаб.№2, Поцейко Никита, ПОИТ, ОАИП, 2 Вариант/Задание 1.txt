@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+using namespace::std;
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int a, b;
+    cout << "Введите a, b\n";
+    cin >> a >> b;
+    if(b % a == 0) {
+        cout << "Число а является делителем b\n";    
+    }
+    else {
+        cout << "Число а не является делителем b\n";    
+    }
+}

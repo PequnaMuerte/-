@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace::std;
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    double a, x, res;
+    cout << "Введите а\n";
+    cin >> a;
+    cout << "Введите x\n";
+    cin >> x;
+    if(x > a) {
+        res = sin(pow(x, 2)) + pow(x, 0.25);
+    }
+    else if(x <= a && x > 0) {
+        res = log(sqrt(x + 5));
+    }
+    else {
+        res = sqrt(sqrt(sqrt(sqrt(sqrt(pow(x, 2) + x + 1)))));
+    }
+    
+    cout << "Результат: " << res;
+}

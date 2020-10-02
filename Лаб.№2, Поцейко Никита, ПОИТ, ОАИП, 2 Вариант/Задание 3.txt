@@ -1,0 +1,19 @@
+
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace::std;
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int a, b;
+    cout << "Введите числа a, b\n";
+    cin >> a >> b;
+    if(a % b == 0 || b % a == 0) {
+        cout << "Да, одно из чисел является делителем другого\n";
+    }
+    else {
+        cout << "Нет, ни одно из чисел не является делителем другого\n";
+    }
+}
