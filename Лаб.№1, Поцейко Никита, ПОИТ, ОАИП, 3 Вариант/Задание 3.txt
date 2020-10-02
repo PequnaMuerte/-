@@ -1,0 +1,16 @@
+
+#include <iostream>
+#include <cmath> //Подключение библиотек Math
+
+using namespace std;
+
+int main()
+{
+    double x = 1.82, y = 18.25, z, b;
+    z = sqrt(15 * y) / (y + (cos(x) / sin(x))); //Высчитываем первую функцию
+    //Где sqrt - корень из, (cos(x) / sin(x)) - косинус, делённый на синус(получается котангенс)
+    b = (y - z / (y - x)) / (cos(x) + pow(y - x, 2)); //Высчитываем вторую функцию.
+    
+    cout << "result: " << b << endl; 
+    return 0; //выходим
+}
